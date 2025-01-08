@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="mt">
+        <div class="conversion-section">
+            <form>
+                <h1>Create New Account</h1><br><br>
+                <label for="firstName">Enter First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required><br>
+                
+                <label for="lastName">Enter Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" required><br>
+                
+                <label for="gender">Select Your Gender:</label><br>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+                
+                <button type="button" onclick="signup()">Sign Up</button><br>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

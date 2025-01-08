@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShiBi Unit Converter</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="ContactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sign.html">Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="mt">
+        <div class="conversion-section">
+            <h2>Number System Conversion</h2>
+            <input type="text" id="numberInput" placeholder="Enter a number (e.g., 1010 for binary)">
+            <select id="fromSystem">
+                <option value="2">Binary</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <select id="toSystem">
+                <option value="2">Binary</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <button onclick="convertNumberSystem()">Convert</button>
+            <p id="numberResult"></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; ShiBi Unit Converter Tool</p>
+        <p>Contact Us: k241028@nu.edu.pk | Phone:0313-0319968</p>
+        <p>Address:  Karachi, Pakistan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
